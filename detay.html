@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Detayı | Okul Öncesi Dünyam</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+    <nav class="navbar">
+        <div class="logo">Okul Öncesi Dünyam</div>
+
+        <ul class="nav-links">
+            <li><a href="index.html">Ana Sayfa</a></li>
+            <li><a href="hakkimda.html">Hakkımda</a></li>
+            <li><a href="blog.html">Blog Yazıları</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main class="detail-page">
+
+    <section class="detail-hero">
+        <span id="detailCategoryBadge" class="detail-category">Kategori</span>
+        <h1 id="categoryTitle">Etkinlik Başlıkları</h1>
+        <p id="categoryIntro">
+            Okul öncesi öğretmenleri için hazırlanmış uygulanabilir içerikler.
+        </p>
+    </section>
+
+    <section class="activity-detail-container">
+
+        <aside class="activity-menu">
+            <h2>Başlıklar</h2>
+            <p>Detayı görmek için bir başlık seçin.</p>
+
+            <div id="activityList" class="activity-list"></div>
+        </aside>
+
+        <article class="activity-content">
+
+            <div class="detail-image">
+                <img id="activityImage" src="images/sanat.jpg" alt="Etkinlik görseli">
+            </div>
+
+            <span id="activityCategory" class="detail-category">Etkinlik</span>
+            <h2 id="activityTitle">Başlık</h2>
+            <p id="activityShortText" class="activity-short-text"></p>
+
+            <div class="detail-info-grid">
+                <div class="detail-info-card">
+                    <h3>Yaş Grubu</h3>
+                    <p id="activityAge"></p>
+                </div>
+
+                <div class="detail-info-card">
+                    <h3>Süre</h3>
+                    <p id="activityTime"></p>
+                </div>
+
+                <div class="detail-info-card">
+                    <h3>Gelişim Alanı</h3>
+                    <p id="activityArea"></p>
+                </div>
+            </div>
+
+            <section class="detail-section">
+                <h2>Etkinliğin Amacı</h2>
+                <p id="activityPurpose"></p>
+            </section>
+
+            <section class="detail-section">
+                <h2>Gerekli Malzemeler</h2>
+                <ul id="activityMaterials"></ul>
+            </section>
+
+            <section class="detail-section">
+                <h2>Hazırlık Aşaması</h2>
+                <p id="activityPreparation"></p>
+            </section>
+
+            <section class="detail-section">
+                <h2>Nasıl Uygulanır?</h2>
+                <ol id="activitySteps"></ol>
+            </section>
+
+            <section class="detail-section teacher-note">
+                <h2>Öğretmen Notu</h2>
+                <p id="activityTeacherNote"></p>
+            </section>
+
+            <div class="back-area">
+                <a href="index.html#blog" class="back-button">← Blog Yazılarına Dön</a>
+            </div>
+
+        </article>
+
+    </section>
+
+</main>
+
+<footer class="footer">
+    <p>© 2026 Okul Öncesi Dünyam</p>
+    <p>Bu proje HTML5, CSS3 ve JavaScript kullanılarak hazırlanmıştır.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

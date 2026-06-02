@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Yazıları | Öğretmenin Blogu</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+    <nav class="navbar">
+        <div class="logo"> Öğretmenin Blogu</div>
+
+        <ul class="nav-links">
+            <li><a href="index.html">Ana Sayfa</a></li>
+            <li><a href="hakkimda.html">Hakkımda</a></li>
+            <li><a href="blog.html">Blog Yazıları</a></li>
+        </ul>
+        </ul>
+    </nav>
+</header>
+
+<main>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Blog Yazıları</h1>
+            <p>
+                Okul öncesi öğretmenleri ve aileler için etkinlik, oyun,
+                gelişim ve sınıf içi uygulama önerileri.
+            </p>
+        </div>
+    </section>
+
+    <section id="blog" class="blog section">
+        <div class="section-title">
+            <h2>İçerikleri Keşfet</h2>
+            <p>Arama yapabilir veya kategoriye göre filtreleyebilirsiniz.</p>
+        </div>
+
+        <div class="search-area">
+            <input type="text" id="searchInput" placeholder="Blog yazısı ara...">
+        </div>
+
+        <div class="category-buttons">
+            <button class="category-btn active" data-category="Tümü">Tümü</button>
+            <button class="category-btn" data-category="Etkinlik">Etkinlik</button>
+            <button class="category-btn" data-category="Oyun">Oyun</button>
+            <button class="category-btn" data-category="Gelişim">Gelişim</button>
+            <button class="category-btn" data-category="Aile">Aile</button>
+            <button class="category-btn" data-category="Sınıf İçi">Sınıf İçi</button>
+        </div>
+
+        <div class="blog-list" id="blogList">
+
+            <article class="blog-card" data-category="Etkinlik">
+                <div class="card-image">🎨</div>
+                <div class="card-content">
+                    <span class="category-label">Etkinlik</span>
+                    <h3>Okul Öncesi İçin Renkli Sanat Etkinlikleri</h3>
+                    <p>
+                        Çocukların yaratıcılığını geliştiren, evde ve sınıfta kolayca
+                        uygulanabilecek sanat etkinlikleri.
+                    </p>
+                    <a class="read-more-btn" href="detay.html?kategori=etkinlik">Devamını Oku</a>
+                </div>
+            </article>
+
+            <article class="blog-card" data-category="Oyun">
+                <div class="card-image">🧸</div>
+                <div class="card-content">
+                    <span class="category-label">Oyun</span>
+                    <h3>Oyun Yoluyla Öğrenmenin Önemi</h3>
+                    <p>
+                        Okul öncesi dönemde oyun, çocukların öğrenme sürecini destekleyen
+                        en etkili yöntemlerden biridir.
+                    </p>
+                    <a class="read-more-btn" href="detay.html?kategori=oyun">Devamını Oku</a>
+                </div>
+            </article>
+
+            <article class="blog-card" data-category="Gelişim">
+                <div class="card-image">🧠</div>
+                <div class="card-content">
+                    <span class="category-label">Gelişim</span>
+                    <h3>Çocuklarda Dil Gelişimini Destekleme</h3>
+                    <p>
+                        Hikaye okuma, şarkılar ve günlük sohbetlerle çocukların dil
+                        gelişimini destekleme yolları.
+                    </p>
+                    <a class="read-more-btn" href="detay.html?kategori=gelisim">Devamını Oku</a>
+                </div>
+            </article>
+
+            <article class="blog-card" data-category="Aile">
+                <div class="card-image">👨‍👩‍👧</div>
+                <div class="card-content">
+                    <span class="category-label">Aile</span>
+                    <h3>Ailelerin Okul Öncesi Eğitime Katılımı</h3>
+                    <p>
+                        Aile desteği, çocukların okul öncesi eğitim sürecinde daha güvenli
+                        ve başarılı ilerlemesine yardımcı olur.
+                    </p>
+                    <a class="read-more-btn" href="detay.html?kategori=aile">Devamını Oku</a>
+                </div>
+            </article>
+
+            <article class="blog-card" data-category="Sınıf İçi">
+                <div class="card-image">🏫</div>
+                <div class="card-content">
+                    <span class="category-label">Sınıf İçi</span>
+                    <h3>Sınıf İçinde Günlük Rutin Oluşturma</h3>
+                    <p>
+                        Okul öncesi sınıflarda düzenli rutinler çocukların kendilerini
+                        güvende hissetmelerini sağlar.
+                    </p>
+                    <a class="read-more-btn" href="detay.html?kategori=sinif">Devamını Oku</a>
+                </div>
+            </article>
+
+            <article class="blog-card" data-category="Etkinlik">
+                <div class="card-image">📚</div>
+                <div class="card-content">
+                    <span class="category-label">Etkinlik</span>
+                    <h3>Hikaye Saati Etkinliği Nasıl Yapılır?</h3>
+                    <p>
+                        Hikaye saatleri çocukların dinleme, anlama, hayal kurma ve kendini
+                        ifade etme becerilerini geliştirir.
+                    </p>
+                    <a class="read-more-btn" href="detay.html?kategori=etkinlik">Devamını Oku</a>
+                </div>
+            </article>
+
+        </div>
+
+        <p id="emptyMessage" class="empty-message">
+            Aradığınız kritere uygun blog yazısı bulunamadı.
+        </p>
+    </section>
+
+</main>
+
+<footer class="footer">
+    <p>© 2026 Öğretmenin Blogu</p>
+    <p>Bu proje HTML5, CSS3 ve JavaScript kullanılarak hazırlanmıştır.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
