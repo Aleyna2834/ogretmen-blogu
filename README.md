@@ -53,16 +53,3 @@ Projeyi çalıştırmak için herhangi bir ek kurulum gerekmez.
 ```text
 https://aleyna2834.github.io/ogretmen-blogu/
 ```
-
-## GitHub Pages ile Yayınlama
-
-Projeyi GitHub Pages üzerinden yayınlamak için:
-
-1. Projeyi GitHub reposuna yükleyin.
-2. Repository sayfasında **Settings** bölümüne girin.
-3. Sol menüden **Pages** sekmesini açın.
-4. Branch olarak `main` seçin.
-5. Klasör olarak `/root` seçin.
-6. **Save** butonuna tıklayın.
-7. GitHub size proje linkini verecektir.
-
